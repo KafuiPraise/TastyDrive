@@ -111,7 +111,7 @@
 			<!-- Table Panel -->
 		</div>
 	</div>
-	<link rel="stylesheet" href="../../fos/admin/assets/css/menu.css" />
+	<link rel="stylesheet" href="../../TastyDrive/admin/assets/css/menu.css" />
 </div>
 <script>
 	function displayImg(input, _this) {

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link rel="stylesheet" href="../../fos/admin/assets/css/admin_login.css" type="text/css">
+  <link rel="stylesheet" href="../../TastyDrive/admin/assets/css/admin_login.css" type="text/css">
 
   <title>Admin | TastyDrive</title>
  	

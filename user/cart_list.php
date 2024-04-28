@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../../fos/user/assets/css/cart_list.css" />
+<link rel="stylesheet" href="../../TastyDrive/user/assets/css/cart_list.css" />
 <!-- Masthead-->
 <header class="masthead">
 	<div class="container h-100">
