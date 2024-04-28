@@ -1,0 +1,46 @@
+	body{
+		width: 100%;
+	    height: calc(100%);
+	    /*background: #007bff;*/
+	}
+	main#main{
+		width:100%;
+		height: calc(100%);
+		background:white;
+	}
+	#login-right{
+		position: absolute;
+		right:0;
+		width:40%;
+		height: calc(100%);
+		background:white;
+		display: flex;
+		align-items: center;
+	}
+	#login-left{
+		position: absolute;
+		left:0;
+		width:60%;
+		height: calc(100%);
+		background:#00000061;
+		display: flex;
+		align-items: center;
+	}
+	#login-right .card{
+		margin: auto
+	}
+	.logo {
+	    margin: auto;
+	    font-size: 8rem;
+	    background: white;
+	    border-radius: 50% 50%;
+	    height: 29vh;
+	    width: 13vw;
+	    display: flex;
+	    align-items: center;
+	}
+	.logo img{
+		height: 80%;
+		width: 80%;
+		margin: auto
+	}

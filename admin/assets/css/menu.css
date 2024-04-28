@@ -1,0 +1,23 @@
+img#cimg,.cimg{
+    max-height: 10vh;
+    max-width: 6vw;
+}
+td{
+    vertical-align: middle !important;
+}
+td p{
+    margin: unset !important;
+}
+.custom-switch,.custom-control-input,.custom-control-label{
+    cursor:pointer;
+}
+b.truncate {
+     overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3; 
+-webkit-box-orient: vertical;	
+font-size: small;
+color: #000000cf;
+font-style: italic;
+}
