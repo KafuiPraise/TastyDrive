@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../../fos/user/assets/css/cart_list.css" />
+<link rel="stylesheet" href="../../TastyDrive/user/assets/css/cart_list.css" />
 <!-- Masthead-->
 <header class="masthead">
 	<div class="container h-100">
@@ -47,7 +47,7 @@
 							<div class="row">
 								<div class="col-md-4" style="text-align: -webkit-center">
 									<a href="../admin/ajax.php?action=delete_cart&id=<?php echo $row['cid'] ?>" class="rem_cart btn btn-sm btn-outline-danger" data-id="<?php echo $row['cid'] ?>"><i class="fa fa-trash"></i></a>
-									<img src="assets/img/<?php echo $row['img_path'] ?>" alt="">
+									<img src="./assets/img/<?php echo $row['img_path'] ?>" alt="">
 								</div>
 								<div class="col-md-4">
 									<p><b>
@@ -136,9 +136,9 @@
 	}
 	$('#checkout').click(function() {
 		if ('<?php echo isset($_SESSION['login_user_id']) ?>' == 1) {
-			location.replace("./index.php?page=checkout")
+			location.replace("../index.php?page=checkout")
 		} else {
-			uni_modal("Checkout", "./login.php?page=checkout")
+			uni_modal("Checkout", "../login.php?page=checkout")
 		}
 	})
 </script>

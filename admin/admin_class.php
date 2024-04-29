@@ -53,7 +53,7 @@ Class Action {
 		foreach ($_SESSION as $key => $value) {
 			unset($_SESSION[$key]);
 		}
-		header("location:../user/index.php");
+		header("location:../index.php");
 	}
 
 	function save_user(){
@@ -99,7 +99,7 @@ Class Action {
 		$data .= ", about_content = '".htmlentities(str_replace("'","&#x2019;",$about))."' ";
 		if($_FILES['img']['tmp_name'] != ''){
 						$fname = strtotime(date('y-m-d H:i')).'_'.$_FILES['img']['name'];
-						$move = move_uploaded_file($_FILES['img']['tmp_name'],'../assets/img/'. $fname);
+						$move = move_uploaded_file($_FILES['img']['tmp_name'],'../user/assets/img'. $fname);
 					$data .= ", cover_img = '$fname' ";
 
 		}
@@ -153,7 +153,7 @@ Class Action {
 
 		if($_FILES['img']['tmp_name'] != ''){
 						$fname = strtotime(date('y-m-d H:i')).'_'.$_FILES['img']['name'];
-						$move = move_uploaded_file($_FILES['img']['tmp_name'],'../assets/img/'. $fname);
+						$move = move_uploaded_file($_FILES['img']['tmp_name'],'../user/assets/img/'. $fname);
 					$data .= ", img_path = '$fname' ";
 
 		}

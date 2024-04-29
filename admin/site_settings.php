@@ -34,7 +34,7 @@ if($qry->num_rows > 0){
 					<input type="file" class="form-control" name="img" onchange="displayImg(this,$(this))">
 				</div>
 				<div class="form-group">
-					<img src="<?php echo isset($meta['cover_img']) ? '../assets/img/'.$meta['cover_img'] :'' ?>" alt="" id="cimg">
+					<img src="<?php echo isset($meta['cover_img']) ? './assets/img/'.$meta['cover_img'] :'' ?>" alt="" id="cimg">
 				</div>
 				<center>
 					<button class="btn btn-info btn-primary btn-block col-md-2">Save</button>

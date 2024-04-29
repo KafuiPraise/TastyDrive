@@ -47,7 +47,7 @@
 								<input type="file" class="form-control" name="img" onchange="displayImg(this,$(this))">
 							</div>
 							<div class="form-group">
-								<img src="<?php echo isset($image_path) ? '../user/assets/img/' . $cover_img : '' ?>" alt="" id="cimg">
+								<img src="<?php echo isset($image_path) ? './assets/img/' . $cover_img : '' ?>" alt="" id="cimg">
 							</div>
 						</div>
 
@@ -111,7 +111,7 @@
 			<!-- Table Panel -->
 		</div>
 	</div>
-	<link rel="stylesheet" href="../../fos/admin/assets/css/menu.css" />
+	<link rel="stylesheet" href="../../TastyDrive/admin/assets/css/menu.css" />
 </div>
 <script>
 	function displayImg(input, _this) {

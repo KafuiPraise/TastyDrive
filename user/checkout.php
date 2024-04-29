@@ -72,7 +72,7 @@ if($chk <= 0){
                     if(resp==1){
                         alert_toast("Order successfully Placed.")
                         setTimeout(function(){
-                            location.replace('./index.php?page=home')
+                            location.replace('../index.php?page=home')
                         },1500)
                     }
                 }

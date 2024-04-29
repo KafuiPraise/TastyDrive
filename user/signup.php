@@ -51,7 +51,7 @@
 			},
 			success:function(resp){
 				if(resp == 1){
-					location.href ='<?php echo isset($_GET['redirect']) ? $_GET['redirect'] : 'index.php?page=home' ?>';
+					location.href ='<?php echo isset($_GET['redirect']) ? $_GET['redirect'] : './index.php?page=home' ?>';
 				}else{
 					$('#signup-frm').prepend('<div class="alert alert-danger">Email already exist.</div>')
 					$('#signup-frm button[type="submit"]').removeAttr('disabled').html('Create');

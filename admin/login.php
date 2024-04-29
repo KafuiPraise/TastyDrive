@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link rel="stylesheet" href="../../fos/admin/assets/css/admin_login.css" type="text/css">
+  <link rel="stylesheet" href="../../TastyDrive/admin/assets/css/admin_login.css" type="text/css">
 
   <title>Admin | TastyDrive</title>
  	
@@ -40,7 +40,7 @@ foreach ($row as $key => $value) {
   <main id="main" class=" bg-dark">
   		<div id="login-left">
   			<div class="logo">
-  				<img src="../assets/img/sample_logo.png" alt="">
+  				<img src="../../TastyDrive/user/assets/img/sample_logo.png" alt="">
   			</div>
   		</div>
   		<div id="login-right">
@@ -87,7 +87,7 @@ foreach ($row as $key => $value) {
 				if(resp == 1){
 					location.href ='./index.php?page=home';
 				}else if(resp == 2){
-					location.href ='../admin/index.php?page=home';
+					location.href ='../user/index.php?page=home';
 				}else{
 					$('#login-form').prepend('<div class="alert alert-danger">Username or password is incorrect.</div>')
 					$('#login-form button[type="button"]').removeAttr('disabled').html('Login');

@@ -5,7 +5,7 @@
 <div class="container-fluid">
 
 	<div class="card ">
-        <img src="../user/assets/img/<?php echo $qry['img_path'] ?>" class="card-img-top" alt="...">
+        <img src="./assets/img/<?php echo $qry['img_path'] ?>" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title"><?php echo $qry['name'] ?></h5>
           <p><b><small class="card-text"><?php echo $qry['description'] ?></small></b></p>
@@ -53,7 +53,7 @@
 	$('#add_to_cart_modal').click(function(){
 		start_load()
 		$.ajax({
-			url:'../admin/ajax.php?action=add_to_cart',
+			url:'../../Tastydrive/admin/ajax.php?action=add_to_cart',
 			method:'POST',
 			data:{pid:'<?php echo $_GET['id'] ?>',qty:$('[name="qty"]').val()},
 			success:function(resp){
