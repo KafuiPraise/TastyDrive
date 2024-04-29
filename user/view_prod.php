@@ -5,7 +5,7 @@
 <div class="container-fluid">
 
 	<div class="card ">
-        <img src="./assets/img/<?php echo $qry['img_path'] ?>" class="card-img-top" alt="...">
+        <img src="../../TastyDrive/user/assets/img/<?php echo $qry['img_path'] ?>" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title"><?php echo $qry['name'] ?></h5>
           <p><b><small class="card-text"><?php echo $qry['description'] ?></small></b></p>

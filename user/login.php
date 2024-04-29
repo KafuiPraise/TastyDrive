@@ -22,7 +22,7 @@
 
 <script>
 	$('#new_account').click(function(){
-		uni_modal("Create an Account",'./user/signup.php?redirect=./index.php?page=./user/checkout')
+		uni_modal("Create an Account",'../../TastyDrive/user/signup.php?redirect=../../Tastydrive/index.php?page=checkout')
 	})
 	$('#login-frm').submit(function(e){
 		e.preventDefault()
@@ -30,7 +30,7 @@
 		if($(this).find('.alert-danger').length > 0 )
 			$(this).find('.alert-danger').remove();
 		$.ajax({
-			url:'./admin/ajax.php?action=login2',
+			url:'../../TastyDrive/admin/ajax.php?action=login2',
 			method:'POST',
 			data:$(this).serialize(),
 			error:err=>{
@@ -40,7 +40,7 @@
 			},
 			success:function(resp){
 				if(resp == 1){
-					location.href ='<?php echo isset($_GET['redirect']) ? $_GET['redirect'] : './index.php?page=home' ?>';
+					location.href ='<?php echo isset($_GET['redirect']) ? $_GET['redirect'] : '../../TastyDrive/index.php?page=home' ?>';
 				}else{
 					$('#login-frm').prepend('<div class="alert alert-danger">Email or password is incorrect.</div>')
 					$('#login-frm button[type="submit"]').removeAttr('disabled').html('Login');

@@ -46,8 +46,8 @@
 						<div class="card-body">
 							<div class="row">
 								<div class="col-md-4" style="text-align: -webkit-center">
-									<a href="../admin/ajax.php?action=delete_cart&id=<?php echo $row['cid'] ?>" class="rem_cart btn btn-sm btn-outline-danger" data-id="<?php echo $row['cid'] ?>"><i class="fa fa-trash"></i></a>
-									<img src="./assets/img/<?php echo $row['img_path'] ?>" alt="">
+									<a href="../../TastyDrive/admin/ajax.php?action=delete_cart&id=<?php echo $row['cid'] ?>" class="rem_cart btn btn-sm btn-outline-danger" data-id="<?php echo $row['cid'] ?>"><i class="fa fa-trash"></i></a>
+									<img src="../../TastyDrive/user/assets/img/<?php echo $row['img_path'] ?>" alt="">
 								</div>
 								<div class="col-md-4">
 									<p><b>
@@ -136,9 +136,9 @@
 	}
 	$('#checkout').click(function() {
 		if ('<?php echo isset($_SESSION['login_user_id']) ?>' == 1) {
-			location.replace("../index.php?page=checkout")
+			location.replace("../../TastyDrive/index.php?page=checkout")
 		} else {
-			uni_modal("Checkout", "../login.php?page=checkout")
+			uni_modal("Checkout", "../../TastyDrive/user/login.php?page=checkout")
 		}
 	})
 </script>

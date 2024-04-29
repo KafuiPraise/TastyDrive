@@ -41,7 +41,7 @@
 		if($(this).find('.alert-danger').length > 0 )
 			$(this).find('.alert-danger').remove();
 		$.ajax({
-			url:'../admin/ajax.php?action=signup',
+			url:'../../TastyDrive/admin/ajax.php?action=signup',
 			method:'POST',
 			data:$(this).serialize(),
 			error:err=>{

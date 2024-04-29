@@ -1,5 +1,5 @@
 <?php
-include '../admin/database/db_connect.php';
+include './admin/database/db_connect.php';
 
 $stmt = $conn->prepare("SELECT * FROM cart WHERE user_id = ?");
 $stmt->bind_param("i", $_SESSION['login_user_id']);
@@ -65,14 +65,14 @@ if($chk <= 0){
           
             start_load()
             $.ajax({
-                url:"../admin/ajax.php?action=save_order",
+                url:"../../TastyDrive/admin/ajax.php?action=save_order",
                 method:'POST',
                 data:$(this).serialize(),
                 success:function(resp){
                     if(resp==1){
                         alert_toast("Order successfully Placed.")
                         setTimeout(function(){
-                            location.replace('../index.php?page=home')
+                            location.replace('../../TastyDrive/index.php?page=home')
                         },1500)
                     }
                 }

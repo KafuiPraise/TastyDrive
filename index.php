@@ -50,9 +50,14 @@ foreach ($row as $key => $value) {
 
   <?php
   $page = isset($_GET['page']) ? $_GET['page'] : "home";
-  include $page . '.php';
-  ?>
-
+  $file = './user/' . $page . '.php';
+  
+  if (file_exists($file)) {
+    include $file;
+  } else {
+    echo "The file $file does not exist.";
+  }
+?>
 
   <div class="modal fade" id="confirm_modal" role='dialog'>
     <div class="modal-dialog modal-md" role="document">
@@ -105,7 +110,7 @@ foreach ($row as $key => $value) {
     </div>
   </footer>
 
-  <?php include('./user/footer.php') ?>
+  <?php include('./user/footer.php'); ?>
 </body>
 
 <?php $conn->close() ?>
