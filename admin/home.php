@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['login_name'])) {
+    header("Location: ./login.php");
+    exit;
+}
+?>
 <link rel="stylesheet" href="../../TastyDrive/admin/assets/css/admin_home.css" type="text/css">
 <div class="container-fluid">
     <div class="row">
