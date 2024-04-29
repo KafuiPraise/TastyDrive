@@ -1,6 +1,6 @@
 {
-    "name": "fos/1",
-    "description": "",
+    "name": "tastydrive/1",
+    "description": "A food ordering app",
     "type": "project",
     "license": "MIT",
     "require": {
@@ -16,12 +16,12 @@
     },
     "autoload": {
         "psr-4": {
-            "fos\\": "src/"
+            "TastyDrive\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "fos\\": "tests/"
+            "TastyDrive\\": "tests/"
         },
         "scripts": {}
     }
