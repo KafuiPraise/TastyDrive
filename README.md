@@ -63,7 +63,7 @@ Follow these steps to set up and run the TastyDrive application locally:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/yourusername/TastyDrive.git
-   cd tastydrive
+   cd TastyDrive
    ```
 
 2. **Install Dependencies**:
