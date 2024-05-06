@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <link href="{{ asset('vendor/laravel-tastydish/css/styles.css') }}" rel="stylesheet">
+        <link href="{{ asset('vendor/laravel-tastydrive/css/styles.css') }}" rel="stylesheet">
            
 </head>
     <body class="antialiased">
@@ -31,6 +31,5 @@
             @endif
 
         </div>
-        <div>sdfghjkl</div>
     </body>
 </html>

@@ -21,7 +21,7 @@ rel="stylesheet" type="text/css">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
-            {{ config('app.name', 'TastyDrive') }}
+            {{ ('TastyDrive') }}
             </a>
             <button class="navbar-toggler" type="button" datatoggle="collapse" data-target="#navbarSupportedContent" ariacontrols="navbarSupportedContent" aria-expanded="false" arialabel="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
