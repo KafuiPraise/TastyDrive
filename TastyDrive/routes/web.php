@@ -40,5 +40,9 @@ Route::post('/user/edit', [UserController::class, 'update']);
 Route::get('/user/edit', [UserController::class, 'updateView']);
 Route::delete('/user/{user}', [UserController::class, 'delete']);
 
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
 
 

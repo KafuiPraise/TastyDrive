@@ -1,0 +1,31 @@
+/* Custom CSS for About Us Page */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.about-us-container {
+    background-image: url('/images/about-bg.png'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #090909; /* White text color */
+    padding: 0 20px; /* Add padding for better readability */
+}
+
+.about-us-content h3 {
+    font-size:xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-style: oblique;
+    justify-content: center;
+    text-align: center;
+    line-height: 5.0;
+    margin-bottom: 20px;
+}

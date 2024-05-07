@@ -4,7 +4,7 @@
             <div class="flex flex-row p-1">
                 <div class="flex-col flex-1 ">
                     
-                        <button class="mx-3 hover:text-blue-700">About Us</button>
+                        <button class="mx-3 hover:text-blue-700"> <a href="{{ route('about') }}" class="text-muted mx-3">About Us</a></button>
                     </div>
 
                     
