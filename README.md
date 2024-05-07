@@ -56,24 +56,10 @@ TastyDrive is a collaborative web-based food ordering application developed as a
 
 ## Technologies Used <a name="technologies-used"></a>
 
-- **Laravel Framework**
-  ![Laravel Logo](https://laravel.com/img/logomark.min.svg)
-
-- **MySQL Database**
-  ![MySQL Logo](https://www.mysql.com/common/logos/logo-mysql-170x115.png)
-
-- **HTML/CSS/JavaScript**
-  ![HTML/CSS/JavaScript](https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png)
-
-- **Bootstrap**
-  ![Bootstrap Logo](https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-social-logo.png)
-
-- **Git**
-  ![Git Logo](https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png)
-
-- **Composer**
-  ![Composer Logo](https://getcomposer.org/img/logo-composer-transparent.png)
-
+- **Laravel Framework**<div align="center">
+Laravel Framework	MySQL Database	HTML/CSS/JavaScript	Bootstrap	Git	Composer
+<img src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo" width="100px">	<img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL Logo" width="100px">	<img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="HTML/CSS/JavaScript" width="100px">	<img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-social-logo.png" alt="Bootstrap Logo" width="100px">	<img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git Logo" width="100px">	<img src="https://getcomposer.org/img/logo-composer-transparent.png" alt="Composer Logo" width="100px">
+</div>
 ## Installation and Setup <a name="installation-and-setup"></a>
 
 ### Prerequisites <a name="prerequisites"></a>
