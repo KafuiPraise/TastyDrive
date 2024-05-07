@@ -29,9 +29,8 @@
     <div id="app" class="min-h-screen flex flex-col">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand font-bold text-xl" href="{{ url('/') }}">
-                    <!-- {{ config('app.name', 'TastyDrive') }} -->
-                    {{ __('TastyDrive') }}
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    <img src="{{ asset('images/logo.png') }}" alt="Logo" class="navbar-logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -49,7 +48,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                                     </svg>
-                                    <div class="text-md mt-2 bg-gray-600 text-white absolute rounded bg-opacity-50 shadow-xl hidden top-8 py-1 px-2 whitespace-pre" id="tooltiphome">    
+                                    <div class="text-md mt-2 bg-gray-600 text-white absolute rounded bg-opacity-50 shadow-xl hidden top-8 py-1 px-2 whitespace-pre" id="tooltiphome">
                                     </div>
                                     <span class="sr-only">
                                 </div>
@@ -66,7 +65,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
                                     </svg>
-                                    <div class="text-md mt-2 bg-gray-600 text-white absolute rounded bg-opacity-50 shadow-xl hidden top-8 py-1 px-2 whitespace-pre" id="tooltiporderhistory">    
+                                    <div class="text-md mt-2 bg-gray-600 text-white absolute rounded bg-opacity-50 shadow-xl hidden top-8 py-1 px-2 whitespace-pre" id="tooltiporderhistory">
                                     </div>
                                     <span class="sr-only">
                                 </div>
@@ -83,15 +82,15 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                                     </svg>
-                                    <div class="text-md mt-2 bg-gray-600 text-white absolute rounded bg-opacity-50 shadow-xl hidden top-8 py-1 px-2 whitespace-pre" id="tooltipcart">    
+                                    <div class="text-md mt-2 bg-gray-600 text-white absolute rounded bg-opacity-50 shadow-xl hidden top-8 py-1 px-2 whitespace-pre" id="tooltipcart">
                                     </div>
                                     <span class="sr-only">
                                 </div>
                                 <div class="absolute top-0.5 right-0">
                                     @if (session('cart') != null)
-                                        <span class="text-xs text-black font-bold rounded-lg px-1 bg-red-400 opacity-80">
-                                            {{count(session('cart'))}}
-                                        </span>
+                                    <span class="text-xs text-black font-bold rounded-lg px-1 bg-red-400 opacity-80">
+                                        {{count(session('cart'))}}
+                                    </span>
                                     @endif
                                 </div>
                             </a>
@@ -102,23 +101,23 @@
                         </li>
 
                         @can('isAdmin')
-                            <li class="nav-item active relative">
-                                <a class="nav-link" href="{{ url('food/viewfood') }}">
-                                    <div class="flex" id="navbtnviewfood" aria-describedby="tooltipviewfood" data-tooltip-text="View Food">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        </svg>
-                                        <div class="text-md mt-2 bg-gray-600 text-white absolute rounded bg-opacity-50 shadow-xl hidden top-8 py-1 px-2 whitespace-pre" id="tooltipviewfood">    
-                                        </div>
-                                        <span class="sr-only">
+                        <li class="nav-item active relative">
+                            <a class="nav-link" href="{{ url('food/viewfood') }}">
+                                <div class="flex" id="navbtnviewfood" aria-describedby="tooltipviewfood" data-tooltip-text="View Food">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                    <div class="text-md mt-2 bg-gray-600 text-white absolute rounded bg-opacity-50 shadow-xl hidden top-8 py-1 px-2 whitespace-pre" id="tooltipviewfood">
                                     </div>
-                                </a>
-                            </li>
-                            <!-- disabled link for spacing -->
-                            <li class="nav-item disabled">
-                                <a class="nav-link" href=""><span class="sr-only"></a>
-                            </li>
+                                    <span class="sr-only">
+                                </div>
+                            </a>
+                        </li>
+                        <!-- disabled link for spacing -->
+                        <li class="nav-item disabled">
+                            <a class="nav-link" href=""><span class="sr-only"></a>
+                        </li>
                         @endcan
                         <!-- Right Side Of Navbar -->
 
@@ -204,13 +203,13 @@
 
         <main class="flex-grow py-4 h-full">
             @include('components.flash_message')
-            
+
             @yield('content')
         </main>
         <x-footer />
     </div>
     <script>
-        window.addEventListener('DOMContentLoaded', () =>{
+        window.addEventListener('DOMContentLoaded', () => {
             const btnDeleteUser = document.querySelector('#deleteuser');
             const btncancelDelete = document.querySelector('#canceldelete');
             const removeModal = document.querySelector('#remove-user-modal');
@@ -241,7 +240,7 @@
                 tooltiphome.classList.add('hidden');
             })
 
-            if(btnviewfood != null) {
+            if (btnviewfood != null) {
                 tooltipviewfood.innerHTML = btnviewfood.dataset.tooltipText
                 btnviewfood.addEventListener('mouseenter', () => {
                     tooltipviewfood.classList.remove('hidden');
@@ -269,7 +268,7 @@
 
 
         })
-
     </script>
 </body>
+
 </html>

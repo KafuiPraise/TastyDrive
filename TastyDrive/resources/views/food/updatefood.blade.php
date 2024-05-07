@@ -55,13 +55,13 @@
         </div>
 
         <div class="mt-3">
-          <label for="food photo" class="block text-lg font-medium text-gray-700"> Food Photo </label>
+          <label for="food price" class="block text-lg font-medium text-gray-700"> Food Photo Link </label>
           <div class="mt-1 flex flex-col rounded-md">
-            <input required type="file" name="photo" id="photo" class="shadow-sm @error('photo') is-invalid @enderror p-1 border focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-md sm:text-lg border-gray-300">
-            @error('photo')
-              <span class="invalid-feedback" role="alert">
+            <input required value="{{$food['picture']}}" type="text" name="picture" id="picture" class="shadow-sm @error('picture') is-invalid @enderror p-1 border focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-md sm:text-lg border-gray-300" placeholder="https://www.google.com/">
+            @error('picture')
+            <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
-              </span>
+            </span>
             @enderror
           </div>>  
       </div>

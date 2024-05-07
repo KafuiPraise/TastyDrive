@@ -48,22 +48,17 @@
           <label for="food type" class="block text-lg font-medium text-gray-700">Food type</label>
           <div>
             <select name="type" id="type" class="flex justify-center mt-1 flex rounded-md shadow-sm p-1 border focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-md sm:text-lg border-gray-300">>
-              <option value="local">local</option>
+              <option value="local">Local</option>
               <option value="snacks">Snacks</option>
               <option value="fast_food">Fast Food</option>
             </select>
           </div>
 
           <div class="mt-3">
-            <label for="food photo" class="block text-lg font-medium text-gray-700"> Food Photo </label>
+            <label for="food price" class="block text-lg font-medium text-gray-700"> Food Photo Link </label>
             <div class="mt-1 flex flex-col rounded-md">
-              <input required type="file" name="photo" id="photo" class="shadow-sm @error('photo') is-invalid @enderror p-1 border focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-md sm:text-lg border-gray-300">
-              @if($food->picture)
-              <img src="{{ asset('image/' . $food->picture) }}" alt="Food Image">
-              @else
-              <p>No image available</p>
-              @endif
-              @error('photo')
+              <input required type="text" name="picture" id="picture" class="shadow-sm @error('picture') is-invalid @enderror p-1 border focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-md sm:text-lg border-gray-300" placeholder="https://www.google.com/">
+              @error('picture')
               <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
               </span>

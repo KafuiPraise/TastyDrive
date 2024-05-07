@@ -4052,6 +4052,10 @@ textarea.form-control-lg {
   text-decoration: none;
   white-space: nowrap;
 }
+.navbar-logo {
+  max-height: 40px;
+  width: auto;
+}
 
 .navbar-nav {
   display: flex;

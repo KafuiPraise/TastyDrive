@@ -32,10 +32,10 @@ if (session('cart') == null) {
                 <a href="../home/local" class="sort-font">Local</a>
             </div>
             <div class="py-1 px-3 border-solid border-1 border-slate-300 rounded-xl text-center bg-white">
-                <a href="../home/Chinese" class="sort-font">Snacks</a>
+                <a href="../home/snacks" class="sort-font">Snacks</a>
             </div>
             <div class="py-1 px-3 border-solid border-1 border-slate-300 rounded-xl text-center bg-white">
-                <a href="../home/Japanese" class="sort-font">Fast Food</a>
+                <a href="../home/fast_food" class="sort-font">Fast Food</a>
             </div>
         </div>
         

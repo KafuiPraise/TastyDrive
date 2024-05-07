@@ -12,7 +12,6 @@ use Illuminate\Validation\Rule;
 
 class FoodController extends Controller
 {
-    
     public function index()
     {
         if (request()->has('asc')) {
@@ -28,7 +27,8 @@ class FoodController extends Controller
         }
         return view('food.home',  ['foods' => $foods]);
     }
-        public function filter($type)
+    
+    public function filter($type)
     {
         $foods = Food::where('type', '=', $type);
 
@@ -81,55 +81,38 @@ class FoodController extends Controller
         return redirect('/food/viewfood');
     }
 
-    public function create(Request $request)
+    public function create(Request $food)
     {
-        $request->validate([
+        $food->validate([
             'name' => 'required | unique:food',
             'description' => 'required',
             'price' => 'required',
             'type' => 'required',
-            'photo' => 'required|image|mimes:jpeg,png,jpg,gif|max:5048',
+            'picture' => 'required'
         ]);
-        if ($request->hasFile('photo')) {
-            $image = $request->file('photo');
-            $filename = time() . '.' . $image->getClientOriginalExtension();
-            $image->move(public_path('images'), $filename);
-            $request->input('photo', $filename);
-        }
-        Food::create($request->all());
-        return redirect('food/viewfood');
+        Food::create($food->all());
+        return redirect('/food/viewfood');
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $food, $id)
     {
-        $request->validate([
+        $food->validate([
             'name' => [
                 'required',
-                Rule::unique('request')->ignore($id),
+                 Rule::unique('food')->ignore($id),
             ],
             'description' => 'required',
             'price' => 'required',
             'type' => 'required',
-            'photo' => 'required'
+            'picture' => 'required'
         ]);
-
-        $food = Food::find($id);
-
-        if ($request->hasFile('photo')) {
-            $image = $request->file('photo');
-            $path = time() . '.' . $image->getClientOriginalExtension();
-            $image->move(public_path($path = 'images'));
-            $food->photo = $path;
-        }
-
-        $food->name = $request->name;
-        $food->description = $request->description;
-        $food->price = $request->price;
-        $food->type = $request->type;
-        $food->photo = $request->photo;
-
-        $food->save();
-
+        Food::where('id', $id)->update([
+            'name' => $food['name'],
+            'description' => $food['description'],
+            'price' => $food['price'],
+            'type' => $food['type'],
+            'picture' => $food['picture'],
+        ]);
         return redirect('/food/viewfood');
     }
 }
