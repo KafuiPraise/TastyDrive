@@ -16,6 +16,11 @@ if (session('cart') == null) {
     </div>
 </div>
 
+<div class="flex flex-col items-center justify-center mt-10">
+        <h1 class="text-4xl font-bold mb-4">Welcome to TastyDrive!</h1>
+        <a href="/home" class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600">Order Now</a>
+    </div>
+
 <div class="mx-8">
     <div class="flex flex-row">
         <div class="flex flex-row space-x-4 flex-grow">
@@ -33,15 +38,7 @@ if (session('cart') == null) {
                 <a href="../home/Japanese" class="sort-font">Fast Food</a>
             </div>
         </div>
-        <div class="flex flex-row space-x-4 flex-grow justify-end">
-            <span class="font-weight-bold sort-font my-auto"> Order By :</span>
-            <div class="py-1 px-3 border-solid border-1 border-slate-300 rounded-xl text-center bg-white">
-                <a href="{{url()->current().'?asc=true'}}" class="sort-font">Lowest</a>
-            </div>
-            <div class="py-1 px-3 border-solid border-1 border-slate-300 rounded-xl text-center bg-white">
-                <a href="{{url()->current().'?asc=false'}}" class="sort-font">Highest</a>
-            </div>
-        </div>
+        
     </div>
 </div>
 

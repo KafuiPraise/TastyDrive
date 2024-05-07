@@ -28,7 +28,6 @@ class Food extends Model
         'price',
         'description',
         'type',
-        'picture',
     ];
 
     public function orders() {

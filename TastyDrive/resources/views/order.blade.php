@@ -25,7 +25,7 @@
                         <p class="mb-1"> Total: <span class="font-semibold capitalize"> GHS{{number_format((float)$order->total, 2, '.', '')}} </span> </p>
                         {{-- flex justify-center leading-normal w-1/6 --}}
                         <div class="mt-2">
-                            <button onclick="remove_form_action({{$order->id}})" type="button" class="openRemoveModal text-red-700 font-semibold bg-inherit border-red-500 rounded hover:text-white hover:bg-red-500 hover:border-transparent py-1 px-3 border-2">
+                        <button onclick="remove_form_action({{$order->id}})" type="button" class="openRemoveModal text-red-700 font-semibold bg-inherit border-red-500 rounded hover:text-white hover:bg-red-500 hover:border-transparent py-1 px-3 border-2">
                                 <span> Delete Order </span>
                             </button>
                         </div>

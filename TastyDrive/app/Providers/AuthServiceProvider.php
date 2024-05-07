@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Gate;
+use App\Policies\FoodPolicy;
+
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -14,6 +16,8 @@ class AuthServiceProvider extends ServiceProvider
      */
     protected $policies = [
         // 'App\Models\Model' => 'App\Policies\ModelPolicy',
+        Food::class => FoodPolicy::class,
+
     ];
 
     /**
@@ -25,6 +29,14 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        // Define an admin role
+        Gate::define('isAdmin', function($user) {
+            return $user->isAdmin == 1;
+        });
+
+        // Define a user role
+        Gate::define('isUser', function($user) {
+            return $user->isAdmin == 0;
+        });
     }
 }

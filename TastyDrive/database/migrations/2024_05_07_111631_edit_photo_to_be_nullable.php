@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class ChangeDeliveryAddressColumnToNullableInOrderTable extends Migration
+class EditPhotoToBeNullable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class ChangeDeliveryAddressColumnToNullableInOrderTable extends Migration
      */
     public function up()
     {
-        Schema::table('order', function (Blueprint $table) {
-            $table->string('deliveryAddress')->nullable()->change();
+        Schema::table('food', function (Blueprint $table) {
+            $table->string('photo')->nullable()->default(null)->change();
         });
     }
 
@@ -25,8 +25,8 @@ class ChangeDeliveryAddressColumnToNullableInOrderTable extends Migration
      */
     public function down()
     {
-        Schema::table('order', function (Blueprint $table) {
-            $table->string('deliveryAddress')->change();
+        Schema::table('foods', function (Blueprint $table) {
+            //
         });
     }
 }
