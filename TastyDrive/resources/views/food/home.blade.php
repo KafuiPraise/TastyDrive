@@ -9,17 +9,14 @@ if (session('cart') == null) {
 
 @section('content')
 
-<div class="hidden flex w-full justify-center items-center" id="message-modal" data-object="{{ Session::get('unauthorized')}}">
-    <div class="px-4 py-2 mb-4 mx-2 bg-red-100 w-8/12 flex">
-        <p id="message-content" class="text-red-800 flex-grow m-auto font-semibold"></p>
-        <button type="button" class="close text-lg" id="close">x</button>
+<div class="welcome-section">
+    <div class="welcome-content">
+        <h1 class="text-lg font-bold mb-4">Welcome to TastyDrive!</h1>
+        <p class="text-xl">Your ultimate destination for ordering delicious meals online.</p>
     </div>
 </div>
 
-<div class="flex flex-col items-center justify-center mt-10">
-        <h1 class="text-4xl font-bold mb-4">Welcome to TastyDrive!</h1>
-        <a href="/home" class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600">Order Now</a>
-    </div>
+
 
 <div class="mx-8">
     <div class="flex flex-row">
