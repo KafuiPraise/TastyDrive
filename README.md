@@ -56,7 +56,7 @@ TastyDrive is a collaborative web-based food ordering application developed as a
 
 ## Technologies Used <a name="technologies-used"></a>
 
-<div align="center">
+<div align="left">
 <!-- Laravel Logo -->
 <div style="display: inline-block; margin-right: 20px;">
   <img src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo" width="80px">
