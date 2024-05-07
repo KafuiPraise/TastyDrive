@@ -56,16 +56,38 @@ TastyDrive is a collaborative web-based food ordering application developed as a
 
 ## Technologies Used <a name="technologies-used"></a>
 
-- **Laravel Framework**<div align="center">
-<img src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo" width="100px">
-<img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL Logo" width="100px">
-<img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="HTML/CSS/JavaScript" width="100px">
-<img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-social-logo.png" alt="Bootstrap Logo" width="100px">
-<img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git Logo" width="100px">
-<img src="https://getcomposer.org/img/logo-composer-transparent.png" alt="Composer Logo" width="100px">
+<div align="center">
+<!-- Laravel Logo -->
+<div style="display: inline-block; margin-right: 20px;">
+  <img src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo" width="80px">
+  <p style="font-size: 12px; margin-top: 5px;">Laravel Framework</p>
 </div>
-## Installation and Setup <a name="installation-and-setup"></a>
-
+<!-- MySQL Logo -->
+<div style="display: inline-block; margin-right: 20px;">
+  <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL Logo" width="80px">
+  <p style="font-size: 12px; margin-top: 5px;">MySQL Database</p>
+</div>
+<!-- HTML/CSS/JavaScript Logo -->
+<div style="display: inline-block; margin-right: 20px;">
+  <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="HTML/CSS/JavaScript" width="80px">
+  <p style="font-size: 12px; margin-top: 5px;">HTML/CSS/JavaScript</p>
+</div>
+<!-- Bootstrap Logo -->
+<div style="display: inline-block; margin-right: 20px;">
+  <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-social-logo.png" alt="Bootstrap Logo" width="80px">
+  <p style="font-size: 12px; margin-top: 5px;">Bootstrap</p>
+</div>
+<!-- Git Logo -->
+<div style="display: inline-block; margin-right: 20px;">
+  <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git Logo" width="80px">
+  <p style="font-size: 12px; margin-top: 5px;">Git</p>
+</div>
+<!-- Composer Logo -->
+<div style="display: inline-block;">
+  <img src="https://getcomposer.org/img/logo-composer-transparent.png" alt="Composer Logo" width="80px">
+  <p style="font-size: 12px; margin-top: 5px;">Composer</p>
+</div>
+</div>
 ### Prerequisites <a name="prerequisites"></a>
 
 - PHP (7.x or higher)
