@@ -168,10 +168,9 @@ It looks like you want to incorporate images into your project documentation to 
  ## Application Screenshots <a name="screenshots"></a>
 
 - **User Registration Page**
-  ![Registration Page](path/to/registration-screenshot.png)
+  ![Registration Page](Screenshots/registerpage.png)
 
 - **Admin Dashboard**
-  ![Admin Dashboard](path/to/admin-dashboard-screenshot.png)
-
-- **Menu Management**
-  ![Menu Management](path/to/menu-management-screenshot.png)
+  ![Admin Dashboard](Screenshots/welcomepage.png)
+- **Login Page**
+  ![Login Page](Screenshots/loginpage.png)
